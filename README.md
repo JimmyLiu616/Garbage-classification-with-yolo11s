@@ -94,26 +94,4 @@ python webcam_detect.py --model weights/best.pt --camera 0 --conf 0.25
 
 按 `q` 可以關閉偵測視窗。
 
-## 上傳到 GitHub
 
-第一次建立 Git repo：
-
-```bash
-git init
-git add .
-git commit -m "Initial trash detection project"
-```
-
-在 GitHub 建立空 repository 後，把遠端網址換成你的 repo：
-
-```bash
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-git push -u origin main
-```
-
-## 注意事項
-
-- `yolo11n.pt`、`yolo11s.pt` 是 Ultralytics 預訓練權重，已被 `.gitignore` 排除；訓練時 Ultralytics 可自動下載。
-- `weights/best.pt` 是本專案訓練好的權重，可保留在 repo 中供他人直接測試。
-- 如果 GitHub 提示檔案太大，請改用 Git LFS 或不要上傳模型權重，改在 README 中提供下載連結。
