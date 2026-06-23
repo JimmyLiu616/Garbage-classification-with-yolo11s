@@ -1,0 +1,14 @@
+path: .
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 5
+names: ['General waste', 'glass', 'metal', 'paper', 'plastic']
+
+roboflow:
+  workspace: trash-tqsr9
+  project: trash-5jtgs
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trash-tqsr9/trash-5jtgs/dataset/dataset
